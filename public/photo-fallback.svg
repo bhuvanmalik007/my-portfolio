@@ -1,0 +1,18 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="120" x2="520" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111111"/>
+      <stop offset="1" stop-color="#2A2A2A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 210) rotate(90) scale(430)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="640" rx="120" fill="url(#bg)"/>
+  <rect x="0" y="0" width="640" height="640" rx="120" fill="url(#glow)"/>
+  <path d="M320 330C385.17 330 438 277.17 438 212C438 146.83 385.17 94 320 94C254.83 94 202 146.83 202 212C202 277.17 254.83 330 320 330Z" fill="#FFFFFF" fill-opacity="0.14"/>
+  <path d="M118 570C152 446 245 374 320 374C395 374 488 446 522 570" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="56" stroke-linecap="round"/>
+  <text x="320" y="604" text-anchor="middle" font-family="Satoshi, ui-sans-serif, system-ui" font-size="22" font-weight="700" fill="#FFFFFF" fill-opacity="0.55">Photo</text>
+</svg>
+
