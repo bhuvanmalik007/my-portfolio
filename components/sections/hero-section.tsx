@@ -1,10 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowDown } from "lucide-react"
+import { BookOpen } from "lucide-react"
 
 import { meta } from "@/data/meta"
 import { cn } from "@/lib/utils"
-import { BrandIcon } from "@/components/icons/brand-icon"
+import { GitHubIcon } from "@/components/icons/github-icon"
+import { LinkedInIcon } from "@/components/icons/linkedin-icon"
 
 const pill =
   "inline-flex items-center rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground/75 backdrop-blur transition hover:bg-accent/40 hover:text-foreground"
@@ -49,7 +51,7 @@ export function HeroSection() {
                 rel="noreferrer"
                 className={cn(pill, "gap-2")}
               >
-                <BrandIcon name="github" />
+                <GitHubIcon className="size-4" />
                 GitHub
               </Link>
               <Link
@@ -58,7 +60,7 @@ export function HeroSection() {
                 rel="noreferrer"
                 className={cn(pill, "gap-2")}
               >
-                <BrandIcon name="linkedin" />
+                <LinkedInIcon className="size-4" />
                 LinkedIn
               </Link>
               {"medium" in meta.socials && meta.socials.medium ? (
@@ -68,7 +70,7 @@ export function HeroSection() {
                   rel="noreferrer"
                   className={cn(pill, "gap-2")}
                 >
-                  <BrandIcon name="medium" />
+                  <BookOpen className="size-4" />
                   Medium
                 </Link>
               ) : null}

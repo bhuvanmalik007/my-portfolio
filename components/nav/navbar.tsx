@@ -3,9 +3,11 @@
 import * as React from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import { BookOpen } from "lucide-react"
 
 import { ThemeToggle } from "@/components/theme-toggle"
-import { BrandIcon } from "@/components/icons/brand-icon"
+import { GitHubIcon } from "@/components/icons/github-icon"
+import { LinkedInIcon } from "@/components/icons/linkedin-icon"
 import { cn } from "@/lib/utils"
 import { sections, meta } from "@/data/meta"
 import { useScrollSpy } from "@/hooks/use-scroll-spy"
@@ -45,19 +47,19 @@ function SocialIcons({ className }: { className?: string }) {
     <div className={cn("flex items-center gap-2", className)}>
       {socials.github ? (
         <Link className={iconButton} href={socials.github} target="_blank" rel="noreferrer">
-          <BrandIcon name="github" />
+          <GitHubIcon className="size-4" />
           <span className="sr-only">GitHub</span>
         </Link>
       ) : null}
       {socials.linkedin ? (
         <Link className={iconButton} href={socials.linkedin} target="_blank" rel="noreferrer">
-          <BrandIcon name="linkedin" />
+          <LinkedInIcon className="size-4" />
           <span className="sr-only">LinkedIn</span>
         </Link>
       ) : null}
       {"medium" in socials && socials.medium ? (
         <Link className={iconButton} href={socials.medium} target="_blank" rel="noreferrer">
-          <BrandIcon name="medium" />
+          <BookOpen className="size-4" />
           <span className="sr-only">Medium</span>
         </Link>
       ) : null}
